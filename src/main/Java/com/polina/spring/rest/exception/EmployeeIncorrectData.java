@@ -1,7 +1,7 @@
 package com.polina.spring.rest.exception;
 
 public class EmployeeIncorrectData {
-    private  String info;
+    private String info;
 
     public EmployeeIncorrectData() {
     }
