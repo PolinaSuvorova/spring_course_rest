@@ -34,7 +34,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     @Transactional
     public Employee getEmployee(int id) {
-        Employee employee = getEmployee(id);
+        Employee employee = employeeDAO.getEmployee(id);
         if (employee == null) {
             throw new NoSuchEmployeeException("There is no employee with id = " + id);
         }
